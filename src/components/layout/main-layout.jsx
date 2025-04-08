@@ -13,7 +13,7 @@ export const MainLayout = () => {
 		<div>
 			<header className={s.header}>
 				{user ? <>
-				{user.email}
+				{user?.displayName}
 				<Button onClick={() => signOut(auth)}>Logout</Button>
 				</> : <Button to="./login">Login</Button>}
 			</header>
